@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+
++import React, { useState, useEffect } from "react";
 
 import MovieCard from "./MovieCard";
 
@@ -11,7 +12,7 @@ const App = () => {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-    searchMovies("Batman");
+    searchMovies("Superman");
   }, []);
 
   const searchMovies = async (title) => {
@@ -23,7 +24,7 @@ const App = () => {
 
   return (
     <div className="app">
-      <h1>MovieLand</h1>
+      <h1>MovieFlix</h1>
 
       <div className="search">
         <input
